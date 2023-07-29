@@ -1,15 +1,16 @@
-# Created by .ignore support plugin (hsz.mobi)
-# test merge
-/output
-/dist
-/views
 .DS_Store
-/.idea
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+tests/**/coverage/
+
+# Editor directories and files
 .idea
-**/META-INF
-gitlab-token.js
-*.iml
-npm-debug.log
-node_modules
-/.vscode
-/.history
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

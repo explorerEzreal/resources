@@ -1,18 +1,34 @@
 import request from '@/utils/request'
 
 export function login(data) {
+  return request(
+    {
+      url: '/sys/login',
+      method: 'post',
+      data
+    }
+  )
+}
+
+export function getInfo() {
   return request({
-    url: '/vue-admin-template/user/login',
-    method: 'post',
+    url: '/sys/profile',
+    method: 'POST'
+  })
+}
+
+export function role(data) {
+  return request({
+    url: '/sys/role',
+    method: 'POST',
     data
   })
 }
 
-export function getInfo(token) {
+export function department(data) {
   return request({
-    url: '/vue-admin-template/user/info',
-    method: 'get',
-    params: { token }
+    url: '/company/department',
+    method: 'GET'
   })
 }
 
